@@ -12,7 +12,6 @@
 
     $_SESSION['posts'][2] = "{\"title\": \"Sample Blog Post 3\", \"content\": \"This is a sample blog post content. It can contain a more detailed description of the topic or any related information.\"}";
 
-
 // if(!empty($_POST['posts'])){
 //     array_push($_SESSION['posts'],"{title: " + $_POST['title'] + "," + "'content': " + $_POST['content'] + "}");
 // }

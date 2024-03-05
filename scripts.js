@@ -9,15 +9,17 @@ $(document).ready(
 
             console.log(posts)
 
-            Object.keys(posts).forEach(key => {
-                console.log(key, posts[key]);
-                data = JSON.parse(posts[key]);
-                console.log(data)
-                const postElement = $('<div>');
-                postElement.html(`<h2>${data.title}</h2><p>${data.content}</p><hr>`);
-                postsContainer.append(postElement);
-            });
-        },
+            if (Object.keys(posts).length > 0){
+                Object.keys(posts).forEach(key => {
+                    console.log(key, posts[key]);
+                    data = JSON.parse(posts[key]);
+                    console.log(data)
+                    const postElement = $('<div>');
+                    postElement.html(`<h1>${data.title}</h1><p>${data.content}</p><hr>`);
+                    postsContainer.append(postElement);
+                }
+            );
+        }},
         error: function(error) {
             console.error('Error fetching posts:', error);
         }
