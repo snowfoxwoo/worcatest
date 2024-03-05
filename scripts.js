@@ -32,6 +32,7 @@ $(document).ready(
 function addPost(){
     var title = document.getElementById("title").value;
     var content = document.getElementById("content").value;
+    
     console.log(title)
     console.log(content)
     $.ajax({
@@ -61,7 +62,9 @@ function addPost(){
 
         Object.keys(posts).forEach(key => {
             console.log(key, posts[key]);
-            data = JSON.parse(posts[key]);
+            temp = posts[key].replace(/(?:\r\n|\r|\n)/g, '<br>');
+            console.log(temp)
+            data = JSON.parse(temp);
             console.log(data)
             const postElement = $('<div>');
             postElement.html(`<h2>${data.title}</h2><p>${data.content}</p><hr>`);
