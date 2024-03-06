@@ -1,6 +1,10 @@
 <?php
 
-    session_start();
+    if (session_status() == PHP_SESSION_ACTIVE) {
+        echo 'Session is active';
+    }else{
+        session_start();
+    }
 
     //$post_count = count($_SESSION['posts']);
 
