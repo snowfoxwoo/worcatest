@@ -1,6 +1,14 @@
 # worcatest
 
 <p>
+This is a simple Blogging application built to run in Apache Server using PHP7.4.
+
+It consists only of the index (index.php) which uses ajax to retrieve data from the get_posts (get_posts.php) script.
+
+When the submit button is pressed, the posted data is updated to session in add_post (add_posts.php).
+
+The software is written in a hurry, my apologies if there are unforgivable bugs or bad practices observed in this submission.
+
 
 </p>
 <p>
