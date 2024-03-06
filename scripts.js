@@ -62,12 +62,12 @@ function addPost(){
 
         Object.keys(posts).forEach(key => {
             console.log(key, posts[key]);
-            temp = posts[key].replace(/(?:\r\n|\r|\n)/g, '<br>');
+            temp = posts[key].replaceAll('\n', '<br>');
             console.log(temp)
             data = JSON.parse(temp);
             console.log(data)
             const postElement = $('<div>');
-            postElement.html(`<h2>${data.title}</h2><p>${data.content}</p><hr>`);
+            postElement.html(`<h1>${data.title}</h1><p>${data.content}</p><hr>`);
             postsContainer.append(postElement);
         })
     }
