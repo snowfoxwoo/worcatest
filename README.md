@@ -9,6 +9,7 @@ When the submit button is pressed, the posted data is updated to session in add_
 
 The software is written in a hurry, my apologies if there are unforgivable bugs or bad practices observed in this submission.
 
+Update 3/6/2024: I was a little uncomfortable using sessions as the simulation for storing the blog posts, and I tried to incorporate postgres through docker-compose. However, the attempt turns out to be quite time consuming. The postgres.php is made as a test script for connecting to the docker database and is only available in this branch.
 
 </p>
 <p>
