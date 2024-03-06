@@ -1,8 +1,13 @@
 # worcatest
 
+<p>
+
+</p>
+<p>
 This PHP application is best deployed using Docker with PHP7.4.
 
 Before reviewing the application, please install Docker for best results. It is also assumed that git is installed.
+</p>
 
 <p>
 <b>Step 1: Navigate to a working folder on your machine and clone the public repository using git.</b>
